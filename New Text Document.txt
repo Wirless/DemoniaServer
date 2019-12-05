@@ -1,0 +1,4 @@
+:1
+start tfs.exe
+
+goto 1

@@ -1,0 +1,86 @@
+63501 first banshee mwall lever
+63502 second banshee mwall lever
+63503 third banshee mwall lever
+
+<action uniqueid="63501" script="bansheequest/mwswitch1.lua"/>
+<action uniqueid="63502" script="bansheequest/mwswitch2.lua"/>
+<action uniqueid="63503" script="bansheequest/mwswitch3.lua"/>
+
+Movements:
+
+<!-- First Seal -->
+
+63504 - walk on flame first SEAL
+add unique storage of 1st door
+do Spawn monsters pos:
+32275, 31903, 13
+2 demon skeletons 1 ghost
+Teleport to:
+32267,32849, 15
+do send text message advancement
+First seal unlocked
+--DOOR 63591
+<!-- second seal -->
+
+<action uniqueid="63505" script="bansheequest/Campfire1.lua"/>
+<action uniqueid="63506" script="bansheequest/Campfire2.lua"/>
+<action uniqueid="63507" script="bansheequest/Campfire3.lua"/>
+<action uniqueid="63508" script="bansheequest/Campfire4.lua"/>
+<action uniqueid="63509" script="bansheequest/Campfire5.lua"/>
+<action uniqueid="63510" script="bansheequest/Campfire6.lua"/>
+
+63511 WALK FLAME 
+add unique storage second door
+teleport to:
+32261, 31856, 15
+You unlocked Second seal!
+--DOOR 63592
+<!-- third seal -->
+
+movements
+63512-28 Action id? seal3back
+red and tp to pos:32186,31938,14 
+unique id 63530-63537 effect green shimmer
+unique id 63538 SEAL THREE
+STORAGE third door
+you unlock seal 3!
+teleport to 32267,31857,15
+--DOOR 63593
+
+<!-- forth seal -->
+
+seal4blood unique id
+63542 SPILL BLOOD]
+seal4 unique
+63541 onstepin
+add unique storage
+you unlock seal 4!
+teleport to: done
+
+--DOOR 63594
+
+<!-- fifth seal achkctually 6th but we put as fifth -->
+seal6go
+63545
+DOOR 63595
+add storagedoor5
+53595
+
+^\/ u can swap if u wish 
+<!-- sixth WARLOCK SEAL -->
+63551-63552 seal5go  spawns warlocks movements
+
+actions:
+42992 lvr1
+42991 lv2
+42990 lv3
+42989 lv4
+42988	lvr5
+
+seal5 stepin teleports to special roomxd
+and aDD DOOR STORAGE KURWA
+63596!
+
+63560
+
+

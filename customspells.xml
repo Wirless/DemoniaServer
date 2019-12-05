@@ -1,0 +1,18 @@
+outfitz
+
+use onAdvance
+function onAdvance(cid, skill, oldlevel, newlevel)
+if skill == SKILL__LEVEL then
+bbllablablaballbablablablablablbla
+end
+return true
+end
+
+if u need if advanced in ml use if skill == SKILL__MAGLEVEL
+
+for add outfit use
+doPlayerAddOutfitId(cid, 6, 3) 
+6 number of outfit u can change for any outfit u want
+6 is Summoner
+4 is Knight 
+i hope you understand me

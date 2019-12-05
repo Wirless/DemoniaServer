@@ -1,0 +1,15 @@
+TODO:
+
+FUCKING ANKRAHMUN UNDER SPELL NPC THAT QUEST
+
+
+-- Tasks balance
+reward : tibiacoins ( YOU HAVE TO FUCKING GET SO MANY BefORE YOU CAn buy Something from shop but it pays for being active and makes economy coin
+people will trade economy coin on STABLE PRICE VIA auction system. 
+
+Tibia coin auction system -- if you think you got what it takes 8/07/19 you remake auction to second auction system that will only take tibia coin ID and display it properly from DB in php on website
+
+Discord : if you grow large you big. 300+ is a must.
+
+
+ADD ITEMS LOOT AND REST TO RASHID

@@ -1,0 +1,14 @@
+13 -- storage id talk to hugo about negotiating dress patterns
+hugo should set our storage to 14
+15 -- go to technomancer
+-- create talphion
+ talphion give id 16
+16 -- give id 17 go to queen carlin
+queen carlin give id 18
+18 -- go to noodles smelly id 19
+19- noodles if id 19 smell (things) 20 smell 1 thing 21 smell 2 things 22 smell 3 things
+22 - TELL HUGO ORDER
+HUGO IF 22 SET 23 thanks for odering
+
+___________________________________________
+
