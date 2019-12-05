@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="First Items" version="1.0" author="The Forgotten Server" contact="otland.net" enabled="yes">
+	<config name="firstitems_config"><![CDATA[
+		config = {
+			storage = 30201,
+			items = {}
+		}
+	]]></config>
+	<event type="login" name="FirstItems" event="buffer"><![CDATA[
+		domodlib('firstitems_config')
+		if(getPlayerStorageValue(cid, config.storage) > 0) then
+			return
+		end
+
+		for _, id in ipairs(config.items) do
+			doPlayerAddItem(cid, id, 1)
+		end
+
+if getPlayerVocation(cid) == 0 then
+			doPlayerAddItem(cid, 2409, 1) -- serpent sword
+			doPlayerAddItem(cid, 2650, 1) -- jacket armor
+			doPlayerAddItem(cid, 2525, 1) -- dwarven shield
+			doPlayerAddItem(cid, 2643, 1) -- leather boots	
+					doPlayerAddItem(cid, 2463, 1) -- plate armor
+			doPlayerAddItem(cid, 2490, 1) -- dark hemet
+			doPlayerAddItem(cid, 2647, 1) -- plate legs
+		local bag = doPlayerAddItem(cid, 1988, 1)
+		doPlayerAddItem(cid, 2050, 1) -- torch
+		doAddContainerItem(bag, 2152, 5)
+
+elseif isSorcerer(cid) then
+			doPlayerAddItem(cid, 2525, 1) -- dwarven shield
+			doPlayerAddItem(cid, 2409, 1) -- serpent sword
+			doPlayerAddItem(cid, 2463, 1) -- plate armor
+			doPlayerAddItem(cid, 2490, 1) -- dark hemet
+			doPlayerAddItem(cid, 2647, 1) -- plate legs
+			doPlayerAddItem(cid, 2643, 1) -- leather boots		
+		local bag = doPlayerAddItem(cid, 1988, 1)
+		doAddContainerItem(bag, 2050, 1)
+		doAddContainerItem(bag, 2152, 3)
+		doAddContainerItem(bag, 2789, 1)
+
+
+elseif isDruid(cid) then
+			doPlayerAddItem(cid, 2525, 1) -- dwarven shield
+			doPlayerAddItem(cid, 2409, 1) -- serpent sword
+			doPlayerAddItem(cid, 2463, 1) -- plate armor
+			doPlayerAddItem(cid, 2490, 1) -- dark hemet
+			doPlayerAddItem(cid, 2647, 1) -- plate legs
+			doPlayerAddItem(cid, 2643, 1) -- leather boots
+		local bag = doPlayerAddItem(cid, 1988, 1)
+		doAddContainerItem(bag, 2050, 1)
+		doAddContainerItem(bag, 2152, 3)
+		doAddContainerItem(bag, 2789, 1)
+
+elseif isPaladin(cid) then
+
+
+                        doPlayerAddItem(cid, 2525, 1) -- dwarven shield
+			doPlayerAddItem(cid, 2389, 5) -- 5 spears
+			doPlayerAddItem(cid, 2463, 1) -- plate armor
+			doPlayerAddItem(cid, 2490, 1) -- dark hemet
+			doPlayerAddItem(cid, 2647, 1) -- plate legs
+			doPlayerAddItem(cid, 2643, 1) -- leather boots
+		local bag = doPlayerAddItem(cid, 1988, 1)
+		doAddContainerItem(bag, 2050, 1)
+		doAddContainerItem(bag, 2152, 3)
+		doAddContainerItem(bag, 2789, 1)
+
+elseif isKnight(cid) then
+	
+			doPlayerAddItem(cid, 2525, 1) -- dwarven shield
+			doPlayerAddItem(cid, 2409, 1) -- serpent sword
+			doPlayerAddItem(cid, 2463, 1) -- plate armor
+			doPlayerAddItem(cid, 2490, 1) -- dark hemet
+			doPlayerAddItem(cid, 2647, 1) -- plate legs
+			doPlayerAddItem(cid, 2643, 1) -- leather boots
+		local bag = doPlayerAddItem(cid, 1988, 1)
+		doAddContainerItem(bag, 2152, 3)
+		doAddContainerItem(bag, 2428, 1)
+		doAddContainerItem(bag, 2439, 1)
+		doAddContainerItem(bag, 2789, 1)
+end
+
+		setPlayerStorageValue(cid, config.storage, 1)
+	]]></event>
+</mod>
