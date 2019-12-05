@@ -1,0 +1,2 @@
+client is inside the map editor in data/760/ edit tibialocalhost with HEX EDITOR and look for MAP_WIDTH to find IP ADDRESSES TO BE CHANGED
+REMEMBER. DONT REPLACE WITH SPACE REPLACE with HEX 0x00 AS 0x20 IS SPACE and 0x00 IS BLANK!!!!! 
